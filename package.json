@@ -1,5 +1,5 @@
 {
-  "name": "fast-color-search",
+  "name": "fast-color-lookup",
   "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
@@ -7,7 +7,8 @@
   "license": "MIT",
   "dependencies": {
     "neon-cli": "^0.2.0",
-    "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat"
+    "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat",
+    "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
