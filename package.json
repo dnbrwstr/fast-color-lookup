@@ -1,16 +1,17 @@
 {
-  "name": "fast-color-search",
-  "version": "0.1.0",
+  "name": "fast-color-lookup",
+  "version": "0.1.8",
   "description": "",
   "main": "lib/index.js",
   "author": "Dan Brewster <dnbrwstr@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@amilajack/node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
     "neon-cli": "^0.2.0",
-    "node-pre-gyp": "amilajack/node-pre-gyp#neon-compat"
+    "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
+    "install": "node-pre-gyp install --fallback-to-build=false --update-binary || neon build --release",
     "package": "node-pre-gyp package",
     "upload-binary": "node-pre-gyp package && node-pre-gyp-github publish"
   },
@@ -19,8 +20,9 @@
     "url": "git+https://github.com/dnbrwstr/fast-color-lookup.git"
   },
   "files": [
-    "native/index.node",
-    "lib"
+    "lib",
+    "data",
+    "native/index.node"
   ],
   "binary": {
     "module_name": "index",
