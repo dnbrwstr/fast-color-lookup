@@ -12,12 +12,12 @@ pub struct ColorFinder {
     color_tree: KdTree<f32, String, [f32; 3]>
 }
 
-fn create_tree() -> KdTree<f32, String, [f32; 3]> {
+fn create_tree(data_file: String) -> KdTree<f32, String, [f32; 3]> {
     let dimensions = 3;
     let capacity_per_node = 3;
     let mut kdtree: KdTree<f32, String, [f32; 3]> = KdTree::new_with_capacity(dimensions, capacity_per_node);
 
-    let text = fs::read_to_string("./data.txt").unwrap();
+    let text = fs::read_to_string(data_file).unwrap();
     text.lines()
         .map(|x: &str| x.split(" ").collect())
         .for_each(|p: Vec<&str>| {
@@ -36,8 +36,9 @@ fn create_tree() -> KdTree<f32, String, [f32; 3]> {
 declare_types! {
     pub class JsColorFinder for ColorFinder {
         init(mut cx) {
+            let data_path = cx.argument::<JsString>(0)?.value();
             Ok(ColorFinder {
-                color_tree: create_tree()
+                color_tree: create_tree(data_path)
             })
         }
 
