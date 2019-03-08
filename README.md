@@ -1,3 +1,4 @@
-# color-search-rust
+# fast-color-lookup
+
 
 
