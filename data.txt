@@ -2110,7 +2110,6 @@
 100 58 72 tawny port
 100 65 23 pullman brown
 100 81 231 brilliant persian blue
-@@@@@@@@@@@@@@@@@@@@@@@@@
 100 84 3 olive brown
 100 84 82 wenge
 100 86 183 blue violet
