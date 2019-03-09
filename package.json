@@ -1,6 +1,6 @@
 {
   "name": "fast-color-lookup",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "",
   "main": "lib/index.js",
   "author": "Dan Brewster <dnbrwstr@gmail.com>",
@@ -21,7 +21,8 @@
   },
   "files": [
     "lib",
-    "data"
+    "data",
+    "native/keep.txt"
   ],
   "binary": {
     "module_name": "index",
