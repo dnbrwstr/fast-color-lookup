@@ -7,9 +7,8 @@ language: node_js
 if: tag IS present
 
 node_js:
-  - node
+  - 12
   - 10
-  - 9
   - 8
 
 cache: cargo

@@ -1,11 +1,9 @@
-#[macro_use]
 extern crate neon;
 extern crate kdtree;
 
 use neon::prelude::*;
 use std::fs;
 use kdtree::KdTree;
-use kdtree::ErrorKind;
 use kdtree::distance::squared_euclidean;
 
 pub struct ColorFinder {

@@ -1,13 +1,13 @@
 {
   "name": "fast-color-lookup",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "",
   "main": "lib/index.js",
   "author": "Dan Brewster <dnbrwstr@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@amilajack/node-pre-gyp": "github:amilajack/node-pre-gyp#neon-compat",
-    "neon-cli": "^0.2.0",
+    "neon-cli": "^0.3.3",
     "node-pre-gyp-github": "^1.4.3"
   },
   "scripts": {

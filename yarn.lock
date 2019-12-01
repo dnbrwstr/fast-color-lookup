@@ -523,7 +523,7 @@ growl@1.10.5:
   resolved "https://registry.yarnpkg.com/growl/-/growl-1.10.5.tgz#f2735dc2283674fa67478b10181059355c369e5e"
   integrity sha512-qBr4OuELkhPenW6goKVXiv47US3clb3/IbuWF9KNKEijAy9oeHxU9IgzjvJhHkUzhaj7rOUD7+YGWqUjLp5oSA==
 
-handlebars@^4.0.3:
+handlebars@^4.1.0:
   version "4.5.3"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.5.3.tgz#5cf75bd8714f7605713511a56be7c349becb0482"
   integrity sha512-3yPecJoJHK/4c6aZhSvxOyG4vJKDshV36VHp0iVCDVh7o9w2vwi3NSnL2MMPj3YdduqaBcu7cGbggJQM0br9xA==
@@ -862,17 +862,17 @@ neo-async@^2.6.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-neon-cli@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/neon-cli/-/neon-cli-0.2.0.tgz#cc02148ea7d032f6774e645cc2a9e44e09248b4b"
-  integrity sha512-IsrxCyUcuAyWiq4Z+JnTXrjurj2SAL2VtWnCXS8iBYGJeIs1NIhFuLaM6fe7+rOyFfDcqUUTWGxZmkvUqwweRA==
+neon-cli@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/neon-cli/-/neon-cli-0.3.3.tgz#deb1c5a03a2fad996db5a6700ad283a8d24d7aab"
+  integrity sha512-P2kc9ZDp0fXfmHDx3YcQwX8gvZew8WroXG3YY6N2LZoYZNrnGUWIOYGQcck52Jmry+ka02xDtw+lCHpOuGoxRA==
   dependencies:
     chalk "~2.1.0"
     command-line-args "^4.0.2"
     command-line-commands "^2.0.0"
     command-line-usage "^4.0.0"
     git-config "0.0.7"
-    handlebars "^4.0.3"
+    handlebars "^4.1.0"
     inquirer "^3.0.6"
     mkdirp "^0.5.1"
     quickly-copy-file "^1.0.0"
